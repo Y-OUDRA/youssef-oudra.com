@@ -75,7 +75,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            
                }
+         header .n nav ul :hover{
+            transform: scale(0.95);
+            transition: all 0.3s ease;
+         }
+
          header .n nav ul a{
         margin: 0px 15px;
         color: var(--primary-color);
@@ -123,6 +129,9 @@
         header .h-c .s-m{
             margin: 1rem 0rem 2rem;
         }
+        header #home #s-m :hover {
+            transform: scale(0.90);
+        }
         header .h-c .s-m a i{
             font-size: 25px;
             padding: 10px;
@@ -135,6 +144,7 @@
         header .h-c .s-m a i:hover {
             transform: scale(0.90);
         }
+        
         .b-c{
             color: #fff;
             background-color: var(--secondary-color);
@@ -271,18 +281,19 @@
             padding: 4rem 0;
          }
          #contact .row{
-            margin-top: 2rem;
+            margin-top: 1rem;
             display: grid;
             grid-template-columns: repeat(2,1fr);
             background-color: #fff;
             box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
-            padding: 1rem 3rem;
+            padding: 1rem 3rem 0;
             border-radius: 10px;
             column-gap: 3rem;    
+            padding-bottom: 0;
          }
          
          #it{
-            max-width: 500px;
+            max-width: 430px;
          }
          #contact .row input, #contact .row textarea{
             display: block;
@@ -328,8 +339,6 @@
         border-radius: 5px;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     }
-    /* Add the following CSS inside your <style> tag */
-       /* Add the following CSS inside your <style> tag */
 
 @media only screen and (max-width: 768px) {
     header .n nav {
@@ -429,8 +438,8 @@
     .tat {
         font-size: 40px;
     }
+    
 }
-
 @media(max-width: 528px) {
     #home .h-c h1{
         font-size: 35px;
@@ -460,11 +469,8 @@
     padding: 2rem 1rem;
 }
 
-
-
-
-}     
-            
+  }
+ 
     </style>
 </head>
 
@@ -564,11 +570,10 @@
         </section>
         <section id="contact">
             <div class="cntr">
-                <h2> Get In <i class="fa-solid fa-headset"> </i> <span class="t-p"> Touch </span>
-                </h2>
+                 <h2> Get In <i class="fa-solid fa-headset"> </i> <span class="t-p"> Touch </span> </h2>
                <div class="row">
-          
-           <img id="it" src="contact.png" alt="cantact">
+               
+          <img id="it" src="contact.png" alt="contact">
            <form action="https://formsubmit.co/oudrayoussef75@gmail.com"  method="POST" target="_blank">
            <input type="text" name="Name" id="Name" placeholder=" Name " required>
            <input type="text" name="Email" id="Email" placeholder=" Email " required>
@@ -586,9 +591,5 @@
 </footer>
 
 </body>
-
-
-
-
 
 </html>

@@ -91,6 +91,35 @@
         color: var(--primary-color);
         font-family: 600;
         }
+header .n nav ul a:after{
+
+content: "";
+
+position: absolute;
+
+background-color: var(--secondary-color);
+
+height: 3px;
+
+width: 0;
+
+left: 0;
+
+bottom: 10px;
+
+transition: 0.3s;
+
+}
+
+a:hover{
+
+color: #ffffff;
+
+}
+a:hover:after{
+
+width: 100%;
+}
         header .h-c{
             display: grid;
             grid-template-columns: 1.5fr 1fr;

@@ -384,13 +384,7 @@ header .n nav ul li {
         
 
 @media only screen and (max-width: 768px) {
-    header .n nav {
-        flex-direction: column;
-        align-items: flex-start;
-        align-content: center;
-    }
-    header .n nav ul {
-        flex-direction: column;
+ header .n nav {
         align-items: flex-start;
         background-color: var(--bg-primary);
         position: fixed;
@@ -405,14 +399,13 @@ header .n nav ul li {
     }
 
     header .n nav ul {
-        flex-direction: column;
-        align-items: center;
+        /* ترك هذا السطر فارغ للسماح للروابط بالظهور في سطر واحد */
     }
 
     header .n nav ul li {
-        width: 100%;
+        margin: 0;
+        padding: 1rem 2rem;
         text-align: center;
-        padding: 1rem 0;
         border-bottom: 1px solid #ccc;
     }
 

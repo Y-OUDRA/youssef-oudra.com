@@ -85,16 +85,14 @@
             transform: scale(0.95);
             transition: all 0.3s ease;
          }
+header .n nav ul li a {
+    margin: 0px 15px;
+    color: var(--primary-color);
+    font-family: 600;
+    position: relative;
+}
 
-         header .n nav ul a{
-        margin: 0px 15px;
-        color: var(--primary-color);
-        font-family: 600;
-        position: relative;
-        }
-
-
-header .n nav ul a:after {
+header .n nav ul li a:after {
     content: "";
     position: absolute;
     width: 0;
@@ -105,9 +103,13 @@ header .n nav ul a:after {
     transition: width 0.3s ease;
 }
 
-header .n nav ul a:hover:after {
+header .n nav ul li a:hover:after {
     width: 100%;
-}
+            }
+         
+
+
+
         header .h-c{
             display: grid;
             grid-template-columns: 1.5fr 1fr;

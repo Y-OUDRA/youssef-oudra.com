@@ -399,7 +399,9 @@ header .n nav ul li {
     }
 
     header .n nav ul {
-        /* ترك هذا السطر فارغ للسماح للروابط بالظهور في سطر واحد */
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
     }
 
     header .n nav ul li {
@@ -412,6 +414,7 @@ header .n nav ul li {
     header .n nav ul li:last-child {
         border-bottom: none;
     }
+        }
 
 header .h-c {
         grid-template-columns: 1fr;

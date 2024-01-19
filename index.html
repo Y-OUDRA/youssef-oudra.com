@@ -366,6 +366,22 @@ header .n nav ul li a:hover:after {
         border-radius: 5px;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     }
+        header .n nav {
+    display: flex;
+    align-items: center;
+}
+
+header .n nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header .n nav ul li {
+    margin: 0;
+}
+        
 
 @media only screen and (max-width: 768px) {
     header .n nav {
@@ -388,11 +404,20 @@ header .n nav ul li a:hover:after {
         transition: all 0.3s ease;
     }
 
+    header .n nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
     header .n nav ul li {
-        margin: 0;
-        padding: 1rem 2rem;
         width: 100%;
         text-align: center;
+        padding: 1rem 0;
+        border-bottom: 1px solid #ccc;
+    }
+
+    header .n nav ul li:last-child {
+        border-bottom: none;
     }
 
 header .h-c {

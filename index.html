@@ -91,17 +91,18 @@
     font-family: 600;
     position: relative;
 }
-
-header .n nav ul li a:after {
+    header .n nav ul li a:after {
     content: "";
     position: absolute;
     width: 0;
     height: 3px;
     bottom: 0;
-    left: 0;
+    left: 50%; /* Center the underline */
+    transform: translateX(-50%); /* Center the underline */
     background-color: var(--secondary-color);
     transition: width 0.3s ease;
-}
+        }
+        
 
 header .n nav ul li a:hover:after {
     width: 100%;
@@ -516,17 +517,6 @@ header .h-c {
 
     header .n nav ul li {
         margin: 0 8px;
-    }
-    header .n nav ul li a:after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 3px;
-    bottom: 0;
-    left: 50%; /* Center the underline */
-    transform: translateX(-50%); /* Center the underline */
-    background-color: var(--secondary-color);
-    transition: width 0.3s ease;
     }
 
     header #logo {

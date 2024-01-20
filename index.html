@@ -519,6 +519,9 @@ header .h-c {
         margin: 0 8px;
     }
 
+    header .n nav ul li a:hover:after {
+        width: 100%;
+    }
     header #logo {
         order: -1;
         margin-bottom: 3px;
@@ -559,8 +562,12 @@ header .h-c {
 #contact .row{
     padding: 2rem 1rem;
 }
-
-  }
+ }
+  @media only screen and (min-width: 569px) and (max-width: 768px) {
+    header .n nav ul li a:hover:after {
+        width: 0;
+    }
+        }
   </style>
 </head>
 

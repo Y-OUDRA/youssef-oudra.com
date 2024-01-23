@@ -492,23 +492,16 @@ header .h-c {
         padding-bottom: 5px;
         height: 120px;
 
-        }
+    }
+    
     header .n nav ul li a:after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 3px;
-    bottom: 1;
-    left: 50%;
-    transform: translateX(-50%); 
-    background-color: var(--secondary-color);
-    transition: width 0.3s ease;
-        }
-        
+        width: 50%; 
+    }
 
-header .n nav ul li a:hover:after {
-    width: 100%;
-}
+    header .n nav ul li a:hover:after {
+        width: 100%;
+    }
+    
     
     header #logo {
         order: -1;

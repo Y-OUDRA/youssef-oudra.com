@@ -573,6 +573,35 @@ header .h-c {
 #contact .row{
     padding: 2rem 1rem;
 }
+    header .n nav {
+        display: none;
+    }
+
+    #mobile-menu-button {
+        display: block;
+    }
+
+    #mobile-menu-button:hover {
+        cursor: pointer;
+    }
+
+    #mobile-menu-button.active + header .n nav {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--bg-primary);
+        position: fixed;
+        width: 100%;
+        top: 60px; /* Adjust this based on your header height */
+        left: 0;
+        z-index: 1;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    #mobile-menu-button.active {
+        background-color: var(--bg-primary);
+        color: var(--primary-color);
+    }
+    
  }
 
   </style>
@@ -698,7 +727,17 @@ header .h-c {
     <a href="#home" class="s-up"> <i class="fa-solid fa-arrow-up"></i> </a>
     <a href="#ft" class="s-d"> <i class="fa-solid fa-arrow-down"></i> </a>
 </footer>
+<button id="mobile-menu-button">&#9776; Menu </button>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+
+        mobileMenuButton.addEventListener('click', function () {
+            this.classList.toggle('active');
+        });
+    });
+</script>
 </body>
 
 </html>

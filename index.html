@@ -44,13 +44,21 @@
 
         header {
             height: 100vh;
-            background-color: var(--bg-primary);
+            background-image: url(ww1.jpg);
+            background-size:100% 100vh ;
+            border-bottom:2px rgb(172, 149, 149);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
         }
         header .n{
-            background-color: #fff;
-            border-bottom:2px solid #ccc;
+            background-color: #1d1919;
+            border-bottom:0.5px solid #bbb7b7;
+            /*box-shadow: #1d1919 2px 2px 2px;*/
             position: fixed;
             width: 100%;
+            padding-bottom: 0px;
+            height: 100px;
         }
         header .n nav{
             display: flex;
@@ -59,26 +67,37 @@
             align-items: center;
             max-width: 1300px;
             margin: auto;
-            
-            padding: 1.5rem 2rem;
+            margin-top: 0.5px;
 
 
         }
-        .home #logo{
-            color: #1E90FF;
-            font-size: 17.5px;
-            font-weight: 600;
-             
-        }
+   
+    /* header {
+    height: 40px; 
+}
+
+header .n {
+    height: 100px;
+}
+*/
+   
+    
+  nav {
+    padding: 0.5rem 2rem; 
+    }
+
         span.t-s{
-            color: #B22222;
+            color: #c00808;
         }
-       
-        
+      
         header .n nav ul{
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-top: 1px;
+           
+           
+            
             
                }
          header .n nav ul :hover{
@@ -87,9 +106,12 @@
          }
     header .n nav ul li a {
     margin: 0px 15px;
-    color: var(--primary-color);
+   /* color: var(--primary-color);*/
+    color: rgb(247, 241, 241);
     font-family: 600;
     position: relative;
+    margin-top: auto;
+
 }
     header .n nav ul li a:after {
     content: "";
@@ -99,14 +121,20 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%); 
-    background-color: var(--secondary-color);
+    background-color: #c00808;
+    /*background-color: var(--secondary-color);*/
     transition: width 0.3s ease;
         }
         
-
-header .n nav ul li a:hover:after {
-    width: 100%;
-}
+    header .n nav ul li a:hover:after {
+        width: 100%;
+    }
+    .t-p1{
+        
+        color: #1d1919;
+       /* text-shadow: #ad0808 1px 2px 2px;*/
+        
+    }
 
         header .h-c{
             display: grid;
@@ -123,8 +151,11 @@ header .n nav ul li a:hover:after {
             max-width: 500px;
 
         }
+      
+
         .t-p{
-            color: var(--secondary-color);
+            /*color: var(--secondary-color);*/
+            color:#c40505;
         }
         header .h-c p span{
             font-weight: 700;
@@ -132,9 +163,9 @@ header .n nav ul li a:hover:after {
         }
         header .h-c #bb{
             font-size: 60px;
-            color: #B22222;
+            color: #c40505;
             letter-spacing: 3px;
-            text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
+            text-shadow: 2px 2px 2px rgba(15, 14, 14, 0.2);
         }
         header .h-c #pp{
             font-size: 40px;
@@ -144,9 +175,11 @@ header .n nav ul li a:hover:after {
         }
         header .h-c .tt {
             font-size: 25px;
-            color: var(--primary-color);
+           /* color: var(--primary-color);*/
+           color: #1d1919;
             margin: 10px 0px;
             font-weight: 500;
+            /*text-shadow: #9c9797 2px 2px 2px;*/
         }
         header .h-c .s-m{
             margin: 1rem 0rem 2rem;
@@ -157,7 +190,8 @@ header .n nav ul li a:hover:after {
         header .h-c .s-m a i{
             font-size: 25px;
             padding: 10px;
-            background-color: var(--gray);
+            /*background-color: var(--gray);*/
+            background-color: #1d1919;
             color: #fff;
             border-radius: 50%;
             margin-right: 10px;
@@ -169,18 +203,19 @@ header .n nav ul li a:hover:after {
         
         .b-c{
             color: #fff;
-            background-color: #1E90FF;
+            background-color: #1d1919;
             padding: 5px 30px;
             font-size: 15px;
             border-radius: 6px;
             border: none;
             cursor: pointer;
+            box-shadow: #222 2px 2px 2px;
            
             
         }
         
          .b-c:hover{
-              background-color: #B22222;
+              background-color: #c40505;
          }
          #pp {
         font-size: 40px;
@@ -221,7 +256,8 @@ header .n nav ul li a:hover:after {
      #about h2 , #skills h2 , #contact h2{
         text-align: center;
         font-size: 30px;
-        color: var(--primary-color);
+        /*color: var(--primary-color);*/
+        color: #1d1919;
         font-weight: 600;
         letter-spacing: 2px;
         
@@ -234,7 +270,8 @@ header .n nav ul li a:hover:after {
         width: 100PX;
         height: 3px;
         border: none;
-        background-color: var(--secondary-color);
+        /*background-color: var(--secondary-color);*/
+        background-color: #c40505;
         margin: 5px auto 0;
      }
 #about .about-c{
@@ -246,7 +283,8 @@ header .n nav ul li a:hover:after {
 #about .about-c .c1 h3{
     font-size: 23px;
     margin-bottom: 20px;
-    color: var(--primary-color);
+    /*color: var(--primary-color);*/
+    color: #1d1919;
 }
 #about .about-c .c1 p{
     color: var(--gray);
@@ -264,15 +302,22 @@ header .n nav ul li a:hover:after {
  }
     
 #skills {
-    background-color: var(--primary-color);
+    /*background-color: var(--primary-color);*/
+    background-color: #1d1919;
 }
 #skills h2{
     color: var(--bg-primary);
     font-family: 'Poppins', sans-serif;
 }
+.t-p11{
+    color: #1d1919;
+}
 #skills .s-c{
     margin-top: 2rem;
-    background-color: #0e2125;
+    /*background-color: #0e2125;*/
+    background-color: #c00808;
+    box-shadow:#000000 2px 2px 2px ;
+   
 }
 #skills .s-c .row{
     display: grid;
@@ -344,17 +389,18 @@ header .n nav ul li a:hover:after {
         right: 20px;
         font-size: 20px;
         color: #fff;
-        background-color: #1E90FF;
+        background-color: #c00808;
         padding: 5px 12px;
         border-radius: 5px;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     }
         #ft{ 
-            background-color: #222;
+            /*background-color: #222;*/
+            background-color:  #750505;;
             color: #fff;
             text-align: center;
             padding: 1rem 0;
-
+           
         }
         #g-c {
           color: #fff;
@@ -365,7 +411,7 @@ header .n nav ul li a:hover:after {
         left: 20px;
         font-size: 20px;
         color: #fdfafa;
-        background-color: #B22222;
+        background-color: #1d1919;
         padding: 5px 12px;
         border-radius: 5px;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
@@ -482,109 +528,241 @@ header .h-c {
     }
     
 }
-@media(max-width: 528px) {
-    header .n nav {
+@media only screen and (max-width: 568px) {
+
+    header .h-c {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    header .h-c img {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    header .h-c p span {
+        font-size: 20px;
+    }
+
+    header .h-c #bb {
+        font-size: 40px;
+    }
+
+    header .h-c #pp {
+        font-size: 30px;
+        padding-right: 0;
+    }
+
+    header .h-c .tt {
+        font-size: 20px;
+    }
+
+    header .h-c .s-m {
+        margin: 1rem 0rem 2rem;
+        text-align: center;
+    }
+
+    header .h-c .s-m a i {
+        font-size: 30px;
+        margin: 0 10px;
+    }
+
+    .ssb {
+        font-size: 14px;
+        height: auto;
+        width: 100%;
+        padding: 2rem 1rem;
+        margin: auto;
+    }
+
+    .text-am {
+        font-size: medium;
+        text-align: center;
+        width: 100%;
+        margin: 20px 0;
+        padding: 0 10px;
+    }
+
+    #about .about-c {
+        grid-template-columns: 1fr;
+    }
+
+    #about .about-c .c2 p {
+        text-align: center;
+    }
+
+    #skills .s-c .row .item {
+        margin: 20px 3px;
+    }
+
+    #contact .row {
+        display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
-    header .n {
-        background-color: rgb(173, 216, 230);
-        padding-bottom: 5px;
-        height: 120px;
 
+    #contact .row img {
+        max-width: 100%;
     }
+
+    #contact .row input,
+    #contact .row textarea {
+        margin: 10px 0;
+    }
+
+    .tat {
+        font-size: 40px;
+    }
+    #g-c {
+        color: #fff;
+    }
+
+    #about h2,
+    #skills h2,
+    #contact h2 {
+        font-size: 30px;
+    }
+
+    #about .about-c .c1 h3 {
+        font-size: 15px;
+    }
+
+    #skills .s-c .row {
+        grid-template-columns: 1fr;
+    }
+
+    #contact .row {
+        padding: 2rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 586px) {
     
     header .n nav ul li a:after {
-        width: 50%; 
+        width: 50%;
     }
 
     header .n nav ul li a:hover:after {
         width: 100%;
     }
-    
-    
-    header #logo {
-        order: -1;
-        margin-bottom: 5px;
+
+    header .h-c {
+        grid-template-columns: 1fr;
+        text-align: center;
     }
 
-    header .n nav {
-        flex-direction: column;
-        align-items: center;
+    header .h-c img {
+        max-width: 100%;
+        margin-top: 20px;
     }
 
-    header .n nav ul {
-        margin-top: 2px;
+    header .h-c p span {
+        font-size: 20px;
+    }
+
+    header .h-c #bb {
+        font-size: 40px;
+    }
+
+    header .h-c #pp {
+        font-size: 30px;
+        padding-right: 0;
+    }
+
+    header .h-c .tt {
+        font-size: 20px;
+    }
+
+    header .h-c .s-m {
+        margin: 1rem 0rem 2rem;
+        text-align: center;
+    }
+
+    header .h-c .s-m a i {
+        font-size: 30px;
+        margin: 0 10px;
+    }
+
+    .ssb {
+        font-size: 14px;
+        height: auto;
+        width: 100%;
+        padding: 2rem 1rem;
+        margin: auto;
+    }
+
+    .text-am {
+        font-size: medium;
+        text-align: center;
+        width: 100%;
+        margin: 20px 0;
+        padding: 0 10px;
+    }
+
+    #about .about-c {
+        grid-template-columns: 1fr;
+    }
+
+    #about .about-c .c2 p {
+        text-align: center;
+    }
+
+    #skills .s-c .row .item {
+        margin: 20px 3px;
+    }
+
+    #contact .row {
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 
-    header .n nav ul li {
-        margin: 0 0 px; /* قم بتعديل الهوامش حسب الحاجة */
-    }
-    
-
-    header .n nav ul {
-        margin-top: 2px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+    #contact .row img {
+        max-width: 100%;
     }
 
-    header .n nav ul li {
-        margin: 0 8px;
+    #contact .row input,
+    #contact .row textarea {
+        margin: 10px 0;
     }
 
-    
-    header #logo {
-        order: -1;
-        margin-bottom: 3px;
-        margin-top: 1px;
+    .tat {
+        font-size: 40px;
     }
-    
-    #home .h-c h1{
-        font-size: 35px;
-        padding-top: 5rem;
-    }
-     #home .h-c p span ,#home .h-c .tt {
-        font-size: 16px;
-     }
-   header .h-c img{
-    margin-top: 2rem;
-    
-   }
     #g-c {
-    color: #fff;
+        color: #fff;
     }
 
-
-#about h2
-#skills h2
-#contact h2{
-    font-size: 30px;
-}
-#about .about-c .c1 h3{
-    font-size: 15px;
-}
-#skills .s-c .row{
-    grid-template-columns: 1fr;
-}
-#contact .row{
-    padding: 2rem 1rem;
+    #about h2,
+    #skills h2,
+    #contact h2 {
+        font-size: 25px;
     }
-    
- }
+
+    #about .about-c .c1 h3 {
+        font-size: 15px;
+    }
+
+    #skills .s-c .row {
+        grid-template-columns: 1fr;
+    }
+
+    #contact .row {
+        padding: 2rem 1rem;
+    }
+}
 
   </style>
 </head>
 
 <body>
+     
     <header class="home">
         <div class="n">
             <nav>
-                <a href="#home" id="logo">YOUSSEF<span class="t-s"> <i class="fa-solid fa-bolt"></i> OUDRA</span></a>
-                 <hr>
+             <img src="logopicture.png" alt="picture-logo" id="lp" width="220px">
                 <ul>
                     <li> <a href="#home"> <i class="fa-solid fa-house"></i> Home</a> </li>
                     <li> <a href="#about"> <i class="fa-solid fa-user"></i> About</a> </li>
@@ -593,12 +771,13 @@ header .h-c {
                     <li> <a href="#services"> <i class="fa-solid fa-handshake"></i> Services</a> </li>
                 </ul> 
             </nav>
+            
         </div>
    
       <section id="home">  
     <div class="h-c">
         <div class="c-t">
-        <p><span class="t-p">Hi there, I am</span></p>
+        <p><span class="t-p1">Hi there, I am</span></p>
         <h1 id="bb"> Youssef Oudra </h1>
         <p class="tt">  Computer science student </p>
         <div class="s-m">
@@ -620,7 +799,7 @@ header .h-c {
      </div>
      <a href="#about" class="b-c"> About me <i class="fa-solid fa-circle-arrow-down"></i></a>
     </div>
-    <img src="mypic1.png" alt="Youssef Oudra">
+    <img src="yf.png" alt="Youssef Oudra">
 
 </section>
 

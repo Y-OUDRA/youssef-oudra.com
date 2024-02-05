@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title> Y-OD - Portfolio </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="shortcut icon " href="favicon.ico" type="image/x-icon">
@@ -449,6 +450,9 @@ header .n nav ul li {
     padding: 1rem 0 2rem 0;
     text-align: center;
 }
+#cc{
+    color: #222;
+}
 
 #education .row{
             margin-top: 1rem;
@@ -478,7 +482,7 @@ header .n nav ul li {
    color: #000080;
 }
 #education h4#vv{
-   color: #48D1CC;
+   color: #00FA9A;
 }
 #education p{
     padding: 2rem 15rem 2rem 0rem;
@@ -504,7 +508,13 @@ header .h-c {
         max-width: 100%;
         margin-top: 20px;
     }
-
+ 
+    header .n nav img#lp {
+        width: 230px;
+        margin-bottom: -45px;
+        padding: 0 0rem 0 0;
+        text-align: center;
+    }
     header .h-c p span {
         font-size: 20px;
     }
@@ -583,55 +593,65 @@ header .h-c {
     #g-c {
     color: #fff;
     }
-    
-}
-@media(max-width: 528px) {
-    header .n nav {
+    #education .row {
         flex-direction: column;
         align-items: center;
     }
 
+    #education img {
+        max-width: 100%;
+        margin-bottom: 10px;
+        width: 700px;
+    }
+
+    .education-details {
+        padding: 1rem 0 2rem 0;
+    }
+
+    #education h4 {
+        font-size: 18px;
+        padding: 0 1rem 1rem 2rem;
+    }
+
+    #education p {
+        padding: 1rem 1rem 1rem 0rem;;
+        text-align: center;
+    }
+
+    #tpe {
+        padding: 0 1rem 10rem 2rem;;
+    }
+    
+       
+}
+
+@media(max-width: 528px) {
+    header .n nav {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
     header .n nav img {
         order: -1;
-        margin-bottom: 10px;
+        margin-bottom: -45px;
+        padding: 0 0rem 0 0;
+        text-align: center;
     }
 
-    header .n nav ul {
-        margin-top: 0;
-    }
-
+    
     header .n nav ul li {
         margin: 10px 0;
         text-align: center;
     }
 
-    header .n nav ul li a:after {
-        width: 50%;
-    }
-
-    header .n nav ul li a:hover:after {
-        width: 100%;
-    }
     header .n {
-        background-color: rgb(173, 216, 230);
+        background-color:#1d1919;
         padding-bottom: 5px;
-        height: 120px;
+        height: 135px;
 
     }
-    
-    header .n nav ul li a:after {
-        width: 50%; 
-    }
 
-    header .n nav ul li a:hover:after {
-        width: 100%;
-    }
-    
-    
-    header #logo {
-        order: -1;
-        margin-bottom: 5px;
-    }
 
     header .n nav {
         flex-direction: column;
@@ -639,7 +659,7 @@ header .h-c {
     }
 
     header .n nav ul {
-        margin-top: 1px;
+        margin-top: 2px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -658,15 +678,10 @@ header .h-c {
     }
 
     header .n nav ul li {
-        margin: 0 8px;
+        margin: 1rem 0px 0rem 0 ;
     }
 
     
-    header #logo {
-        order: -1;
-        margin-bottom: 3px;
-        margin-top: 1px;
-    }
     
     #home .h-c h1{
         font-size: 35px;
@@ -698,6 +713,41 @@ header .h-c {
 #contact .row{
     padding: 2rem 1rem;
     }
+    #education .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #education img {
+        max-width: 100%;
+        margin-bottom: 10px;
+        width: 500px;
+    }
+
+    .education-details {
+        padding: 1rem 0 2rem 0;
+    }
+
+    #education h4 {
+        font-size: 18px;
+        padding: 0 1rem 1rem 2rem;
+    }
+
+    #education p {
+        padding: 1rem 1rem 1rem 0rem;;
+        text-align: center;
+    }
+    
+    #tpe {
+        padding: 0 1rem 1rem 2rem;;
+    }
+    header .h-c .tt{
+     color: #bbb;
+     text-shadow: #000000 2px 2px 1px;
+    }
+    header .h-c #bb{
+        text-shadow: #4a4a4d 1px 1px 1px;
+    }   
     
  }
 
@@ -813,7 +863,7 @@ header .h-c {
                 <img src="picofeducation.jpg" alt="My School">
                 <div class="education-details">
                 <h4> DUT of Administration Network in Information System </h4>
-                <p> Higher School of Technology Beni-Mellal </p>
+                <a id="cc" href="https://estbm.ac.ma/web/pages/home.php" target="_blank"><p> Higher School of Technology Beni-Mellal </p></a>
                 <h4 id="vv"> 2023 - 2025 </h4><span id="tpe"> <i class="fa-solid fa-hourglass-start"></i> Not Yet Finished </span> </div>
             </div>
             </div>

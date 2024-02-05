@@ -491,6 +491,9 @@ header .n nav ul li {
     padding: 0 9rem 0 0rem;
     color: #c00808;
 }
+#bl{
+    color: #1d1919;
+}
 
 
 
@@ -626,40 +629,7 @@ header .h-c {
 }
 
 @media(max-width: 528px) {
-    header .n nav ul {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    header .n nav ul li {
-        margin: 1rem 0;
-        
-    }
-
-    header .n nav ul li a {
-        margin: 0px;
-        color: rgb(247, 241, 241);
-        font-family: 600;
-        position: relative;
-        margin-top: auto;
-        text-align: center;
-    }
-    header .n nav ul li a:after {
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 3px;
-        bottom: -5px; 
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: #c00808; 
-        transition: width 0.3s ease;
-    }
-
-    header .n nav ul li a:hover:after {
-        width: 100%;
-    }
+   
     header .n nav {
         flex-direction: column;
         align-items: center;
@@ -778,7 +748,7 @@ header .h-c {
      text-shadow: #000000 2px 2px 1px;
     }
     header .h-c #bb{
-       text-shadow: #000000 1px 2px 1px;
+        text-shadow: #000000 1px 1px 1px;
     }   
 
     
@@ -895,9 +865,9 @@ header .h-c {
             <div class="row">
                 <img src="picofeducation.jpg" alt="My School">
                 <div class="education-details">
-                <h4> DUT of Administration Network in Information System  </h4>
+                <h4> DUT of Administration Network in Information System </h4>
                 <a id="cc" href="https://estbm.ac.ma/web/pages/home.php" target="_blank"><p> Higher School of Technology Beni-Mellal </p></a>
-                <h4 id="vv"> 2023 - 2025 </h4><span id="tpe"> <i class="fa-solid fa-hourglass-start"></i> Not Yet Finished </span> </div>
+                <h4 id="vv"> 2023 - 2025 </h4><span id="tpe"> <i id="bl" class="fa-solid fa-hourglass-start"></i> Not Yet Finished </span> </div>
             </div>
             </div>
 

@@ -626,6 +626,40 @@ header .h-c {
 }
 
 @media(max-width: 528px) {
+    header .n nav ul {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header .n nav ul li {
+        margin: 1rem 0;
+        
+    }
+
+    header .n nav ul li a {
+        margin: 0px;
+        color: rgb(247, 241, 241);
+        font-family: 600;
+        position: relative;
+        margin-top: auto;
+        text-align: center;
+    }
+    header .n nav ul li a:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 3px;
+        bottom: -5px; 
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #c00808; 
+        transition: width 0.3s ease;
+    }
+
+    header .n nav ul li a:hover:after {
+        width: 100%;
+    }
     header .n nav {
         flex-direction: column;
         align-items: center;
@@ -645,6 +679,7 @@ header .h-c {
         background-color:#1d1919;
         padding-bottom: 5px;
         height: 135px;
+        border-bottom:1px solid #292727;
 
     }
 
@@ -744,6 +779,7 @@ header .h-c {
     header .h-c #bb{
         text-shadow: #4a4a4d 1px 1px 1px;
     }   
+
     
  }
 

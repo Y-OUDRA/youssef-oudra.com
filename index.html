@@ -495,9 +495,29 @@ header .n nav ul li {
 #bl{
     color: #1d1919;
 }
-#cantact2 .c2-c{
+#cantact2 .cntr {
     display: flex;
-  
+    justify-content: center; /* Align items horizontally at the center */
+}
+
+#cantact2 .item {
+    display: flex;
+    flex-direction: row; /* Align items in a row */
+    justify-content: space-around; /* Distribute items evenly along the main axis */
+    width: 100%; /* Adjust the width as needed */
+    max-width: 1200px; /* Set a maximum width if necessary */
+}
+
+#cantact2 .row {
+    text-align: center; /* Center align the content */
+    flex: 1; /* Distribute available space evenly among the rows */
+    margin: 0 10px; /* Add margin between rows */
+    max-width: 300px; /* Set a maximum width for each row */
+    padding: 1rem 6rem 1rem 6rem;
+}
+#cantact2 .cntr{
+    display: flex;
+    justify-content: center;
     
 }
 #cantact2{
@@ -513,11 +533,12 @@ header .n nav ul li {
     margin: 3rem 2rem 3rem 2rem;
     height: 200px;
      width: 250px;
+     transition: all 1s ease;
     
 }
 #cantact2 .row :hover{
-    transform: scale(1.05);
-    transition: all 0.6s ease;
+    transform: scale(0.9);
+    
 
 }
 #cantact2 h4 {
@@ -544,6 +565,10 @@ header .n nav ul li {
 }
 #cantact2 .email{
     padding: 0 0rem 0 0;
+    
+}
+#cantact2 .item{
+    max-height: 310px;
     
 }
 
@@ -830,12 +855,28 @@ header .h-c {
     header .h-c #bb{
         text-shadow: #000000 1px 1px 1px;
     }   
-  
+    #cantact2 .item {
+        flex-direction: column; /* Change direction to vertical */
+        align-items: center; /* Align items vertically at the center */
+    }
+
+    #cantact2 .row {
+        margin: 10px 0; /* Adjust margin for vertical spacing */
+        max-width: none;
+     /* Remove maximum width for each row */
+    }
+    
     #cantact2 {
          grid-template-columns: 1fr;
     }
+    #cantact2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align content to the bottom */
+    height: 100vh; /* Adjust height as needed */
+}
 #cantact2{
-    height: 1045px;
+    height: 950px;
     
 }
 #ii{
@@ -971,7 +1012,7 @@ header .h-c {
             <div class="row">
                 <img src="picofeducation.jpg" alt="My School">
                 <div class="education-details">
-                <h4 id="ii"> DUT of Administration Network in Information System </h4>
+                <h4 id="ii"> DUT Of Administration Network In Information System </h4>
                 <a id="cc" href="https://estbm.ac.ma/web/pages/home.php" target="_blank"><p> Higher School of Technology Beni-Mellal </p></a>
                 <h4 id="vv"> 2023 - 2025 </h4><span id="tpe"> <i id="bl" class="fa-solid fa-hourglass-start"></i> Not Yet Finished </span> </div>
             </div>

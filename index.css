@@ -329,7 +329,7 @@ header .n {
   .item {
       transition: 2.5s;
   }
- .row :hover{
+ #skills .row :hover{
      transform:scale(1.07);
      border:rgb(44, 39, 39) 0.4px solid;
  }       
@@ -528,7 +528,7 @@ header .n nav ul li {
     
 }
 #cantact2 .item :hover{
-    transform: scale(1.15);
+    transform: scale(1.1);
     
 
 }

@@ -1,5 +1,5 @@
  
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,400&family=Saira:wght@700&display=swap');
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,400&family=Saira:wght@700&display=swap');
         html{
             scroll-behavior: smooth;
         }
@@ -329,8 +329,8 @@ header .n {
   .item {
       transition: 2.5s;
   }
- .item :hover{
-     transform:scale(1.3);
+ .row :hover{
+     transform:scale(1.07);
  }       
 #skills .s-c .row .item:nth-child(4) img{
     max-width: 80px;
@@ -526,8 +526,8 @@ header .n nav ul li {
      transition: all 1s ease;
     
 }
-#cantact2 .row :hover{
-    transform: scale(0.9);
+#cantact2 .item :hover{
+    transform: scale(1.15);
     
 
 }
@@ -883,4 +883,3 @@ header .h-c {
 
  }
 
- 

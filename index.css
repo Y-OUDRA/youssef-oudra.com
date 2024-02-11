@@ -427,7 +427,7 @@ header .n nav ul li {
     color: #F0F8FF;
 }
 #education{
-   background-color: #D2B48C;
+   background-color:rgb(255, 255, 255);
    padding: 4rem 0;
 }
 #education h2{
@@ -471,10 +471,10 @@ header .n nav ul li {
 #education h4 {
    font-size: 20px;
    margin-top: 0rem;
-   color: #000080;
+   color: #000000;
 }
 #education h4#vv{
-   color: #00FA9A;
+   color: #1f9747;
 }
 #education p{
     padding: 2rem 15rem 2rem 0rem;
@@ -512,7 +512,7 @@ header .n nav ul li {
     
 }
 #cantact2{
-    background-color: #c40505;
+    background-color:  #00f4ab0c;
     height: 310px;
 }
 #cantact2 .row{
@@ -528,8 +528,7 @@ header .n nav ul li {
     
 }
 #cantact2 .item :hover{
-    transform: scale(1.1);
-    
+    transform: scale(1.1); 
 
 }
 #cantact2 h4 {
@@ -563,10 +562,6 @@ header .n nav ul li {
     
 }
 
-
-
-
-    
 
 
 @media only screen and (max-width: 768px) {
@@ -693,13 +688,32 @@ header .h-c {
     }
 
     #tpe {
-        padding: 0 1rem 10rem 2rem;;
+        padding: 0 1rem 10rem 2rem;
     }
     
        
 }
 
 @media(max-width: 528px) {
+    header{
+        background-image: url(rb.jpg);
+        background-size:100% 100vh ;
+    }
+    
+    .c1 ,.c2{
+        width: 300px;
+        margin-left: -3rem;
+    }
+    .c2{
+        margin-top: 3rem ;
+    }
+    .s-m{
+        margin: 0 auto;
+    }
+    header .h-c .s-m a i{
+        font-size:19px
+    }
+    
     header .n nav ul {
         flex-direction: column;
         align-items: center;
@@ -840,11 +854,10 @@ header .h-c {
         padding: 0 1rem 1rem 2rem;;
     }
     header .h-c .tt{
-     color: #bbb;
-     text-shadow: #000000 2px 2px 1px;
+     color: #1d1919;
     }
     header .h-c #bb{
-        text-shadow: #000000 1px 1px 1px;
+        text-shadow: #220d0d 1px 1px 1px;
     }   
     #cantact2 .item {
         flex-direction: column; /* Change direction to vertical */

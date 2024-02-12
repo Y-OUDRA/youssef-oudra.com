@@ -601,20 +601,26 @@ header .n nav ul li {
     color: #c00808;
     transition: 0.48s;
 }
+#ft p{
+    font-size: small;
+}
 
 
-
-@media only screen and (max-width: 768px) {
-
+@media only screen and (max-width: 1024px) {
+    header{
+        background-image: url(rb.jpg);
+        background-size:100% 100vh ;
+    }
+    .t-p1{
+        display: none;
+    }
 header .h-c {
         grid-template-columns: 1fr;
         text-align: center;
-
     }
-    header .h-c img {
-       
+   header .h-c img {
         max-width: 100%;
-        margin-top: 20px;
+        margin-top: 30px;
     }
     
 
@@ -731,6 +737,10 @@ header .h-c {
 
     #tpe {
         padding: 0 1rem 10rem 2rem;
+    }
+    #cantact2 {
+        display: none;
+      
     }
     
 }
@@ -941,7 +951,20 @@ header .h-c {
 .n ul li{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    column-gap: 0.3px;
+    column-gap: 0.1px;
+}
+#ft p{
+    font-size: 15px;
+    width: 400px;
+    text-align: center;
+   
+    
+}
+.s-up{
+    bottom: 60px;
+}
+.s-d{
+    bottom: 60px;
 }
 
  }

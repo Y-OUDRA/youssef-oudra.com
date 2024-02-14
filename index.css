@@ -626,7 +626,9 @@ header .h-c {
 
 }
 .b-c{
-    font-size: 22px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin: 1rem auto;
 }
     header .h-c img {
         height: 500px;
@@ -713,10 +715,13 @@ header .h-c {
     #contact .row img {
         max-width: 100%;
     }
-
+    #contact .row input{
+        height: 50px;
+    }
     #contact .row input,
     #contact .row textarea {
-        margin: 10px 0;
+        margin: 20px 0;
+        width: 600px;
     }
 
     .tat {
@@ -731,7 +736,7 @@ header .h-c {
     }
 
     #education img {
-        max-width: 100%;
+        min-width: 100%;
         margin-bottom: 10px;
         width: 700px;
     }
@@ -754,6 +759,7 @@ header .h-c {
 
     #tpe {
         padding: 0 1rem 10rem 2rem;
+
     }
     #cantact2 {
      display: none;
@@ -763,6 +769,7 @@ header .h-c {
 }
 
 @media(max-width: 528px) {
+
     header{
         background-image: url(rb.jpg);
         background-size:100% 100vh ;
@@ -920,8 +927,7 @@ header .h-c {
     #education h4 {
         font-size: 18px;
         padding: 0 1rem 1rem 2rem;
-        text-transform: capitalize;
-        
+        text-transform: capitalize; 
     }
 
     #education p {
@@ -937,7 +943,14 @@ header .h-c {
     }
     header .h-c #bb{
         text-shadow: #220d0d 1px 1px 1px;
-    }   
+    } 
+    #contact .row input,
+    #contact .row textarea{
+        width: 100%;
+    }  
+    #contact .row input{
+        height: 30px;
+    }
     #cantact2 .item {
         flex-direction: column; /* Change direction to vertical */
         align-items: center; /* Align items vertically at the center */

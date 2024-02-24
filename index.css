@@ -331,7 +331,6 @@ header .n {
   }
  #skills .row :hover{
      transform:scale(1.07);
-     border:rgb(44, 39, 39) 0.4px solid;
  }       
 #skills .s-c .row .item:nth-child(4) img{
     max-width: 80px;

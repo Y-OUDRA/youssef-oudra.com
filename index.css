@@ -52,8 +52,7 @@
             height: 100px;
         }
         header .n nav{
-            display: flex;
-            
+            display: flex; 
             justify-content: space-between;
             align-items: center;
             max-width: 1300px;
@@ -86,10 +85,7 @@ header .n {
             justify-content: center;
             align-items: center;
             margin-top: 1px;
-           
-           
-            
-            
+                 
                }
          header .n nav ul :hover{
             transform: scale(0.95);
@@ -331,6 +327,7 @@ header .n {
   }
  #skills .row :hover{
      transform:scale(1.07);
+     
  }       
 #skills .s-c .row .item:nth-child(4) img{
     max-width: 80px;
@@ -362,11 +359,12 @@ header .n {
          #contact .row input, #contact .row textarea{
             display: block;
             width: 100%;
-            margin: 30px 10px;
+            margin: 10px 10px;
             outline: none;
             background-color: #00f4ab0c;
             border: 2px solid #bbb;
             padding: 10px;
+            padding-left: 30px;
          }
         .tat{
             font-size: 50px;
@@ -603,6 +601,12 @@ header .n nav ul li {
 #ft p{
     font-size: small;
 }
+.icon{
+    position: relative;
+    top: 42px;
+    left: 19px;
+    color: #1d1919;
+}
 
 
 @media only screen and (max-width: 1024px) {
@@ -763,6 +767,11 @@ header .h-c {
     #cantact2 {
      display: none;
       
+    }
+    .icon{
+        position: relative;
+        top: 55px;
+        left: -282px;
     }
     
 }
@@ -951,14 +960,13 @@ header .h-c {
         height: 30px;
     }
     #cantact2 .item {
-        flex-direction: column; /* Change direction to vertical */
-        align-items: center; /* Align items vertically at the center */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     #cantact2 .row {
-        margin: 10px 0; /* Adjust margin for vertical spacing */
+        margin: 10px 0;
         max-width: none;
-     /* Remove maximum width for each row */
     }
     
     #cantact2 {
@@ -967,8 +975,8 @@ header .h-c {
     #cantact2 {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* Align content to the bottom */
-    height: 100vh; /* Adjust height as needed */
+    justify-content: flex-end; 
+    height: 100vh;
 }
 #cantact2{
     height: 950px;
@@ -1012,6 +1020,14 @@ header .h-c {
 .s-d{
     bottom: 60px;
 }
+.icon{
+    position: relative;
+    top: 49px;
+    left: -120px;
+}
+
+
+
 
  }
 

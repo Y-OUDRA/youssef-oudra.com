@@ -50,6 +50,7 @@
             width: 100%;
             padding-bottom: 0px;
             height: 100px;
+            z-index: 2;
         }
         header .n nav{
             display: flex; 
@@ -605,7 +606,8 @@ header .n nav ul li {
     position: relative;
     top: 42px;
     left: 19px;
-    color: #1d1919;
+    color: #493c3c;
+    z-index: 1;
 }
 
 
@@ -1023,7 +1025,7 @@ header .h-c {
 .icon{
     position: relative;
     top: 49px;
-    left: -120px;
+    left: -123.5px;
 }
 
 

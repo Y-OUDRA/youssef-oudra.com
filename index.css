@@ -38,7 +38,6 @@
         }
 
         header {
-            height: 100vh;
             background-image: url(ww1.jpg);
             background-size:100% 100vh ;
             border-bottom:2px rgb(172, 149, 149);

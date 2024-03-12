@@ -639,8 +639,8 @@ header .h-c {
     margin: 1rem auto;
 }
     header .h-c img {
-        height: 700px;
-        width: 700px;
+        height: 600px;
+        width: 610px;
         margin-bottom: 0;
         margin: 100px  auto;
         
@@ -788,8 +788,8 @@ header .h-c {
         background-size:100% 100vh ;
     }
     header .h-c img{
-        height: 380px;
-        width: 380px;
+        height: 350px;
+        width: 350px;
     }
     header .h-c .s-m  a{
         font-size: 30px;

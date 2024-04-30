@@ -497,7 +497,7 @@ header .n nav ul li {
     flex-direction: row; /* Align items in a row */
     justify-content: space-around; /* Distribute items evenly along the main axis */
     width: 100%; /* Adjust the width as needed */
-    max-width: 1200px; /* Set a maximum width if necessary */
+    max-width: 1100px; /* Set a maximum width if necessary */
 }
 
 #cantact2 .row {
@@ -514,7 +514,7 @@ header .n nav ul li {
 }
 #cantact2{
     background-color:  #00f4ab0c;
-    height: 610px;
+    height: 550px;
 }
 #cantact2 .row{
     padding: 1rem 6rem 1rem 6rem;
@@ -979,7 +979,7 @@ header .h-c {
     display: flex;
     flex-direction: column;
     justify-content: flex-end; 
-    height: 100vh;
+    height: 100%;
 }
 #cantact2{
     height: 950px;

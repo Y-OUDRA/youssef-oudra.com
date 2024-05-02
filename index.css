@@ -515,6 +515,7 @@ header .n nav ul li {
 #contact2{
     background-color:  #00f4ab0c;
     height: 550px;
+    margin-top: auto;
 }
 #contact2 .row{
     padding: 1rem 6rem 1rem 6rem;
@@ -611,6 +612,9 @@ header .n nav ul li {
     left: 19px;
     color: #493c3c;
     z-index: 1;
+}
+footer {
+    clear: both;
 }
 
 
@@ -769,6 +773,7 @@ header .h-c {
     }
     #contact2 {
      display: none;
+     margin-top: auto;
       
     }
     .icon{
@@ -973,6 +978,8 @@ header .h-c {
     }
     
     #contact2 {
+         
+         margin-top: auto;
          grid-template-columns: 1fr;
     }
     #contact2 {

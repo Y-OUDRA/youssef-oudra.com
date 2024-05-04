@@ -513,9 +513,7 @@ header .n nav ul li {
     
 }
 #contact2{
-    background-color:  #00f4ab0c;
-    height: 550px;
-    margin-top: auto;
+    display: none;
 }
 #contact2 .row{
     padding: 1rem 6rem 1rem 6rem;
